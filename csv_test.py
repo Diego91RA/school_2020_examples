@@ -49,3 +49,20 @@ with open('time_test.csv', 'w+', newline='') as csv_file:
         writer.writerow(row)
 
         time.sleep(1)
+
+
+
+while 1:
+
+    row = {}
+
+    rr = client.read_input_registers(0, 10, unit=1)
+    print(rr.registers)
+    with open(csv_name, 'a') as csv_file:
+        writer = csv.DictWriter(csv_file, fieldnames=fieldnames, lineterminator='\n')
+
+
+        row['temperature'] = rr.registers[0] / 100
+
+        writer.writerow(row)
+    time.sleep(1)
