@@ -26,3 +26,8 @@ for i in s:
 
 l.append(3)
 print(l)
+
+
+s = 'wertwe werwerwwe dfgdfgf dfghdhgfd'
+spl = s.split(' ')
+print(spl)

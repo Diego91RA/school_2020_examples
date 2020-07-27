@@ -2,7 +2,7 @@
 
 
 import string
-alphabets = (string.ascii_lowercase + string.ascii_uppercase + string.punctuation)
+alphabets = (string.ascii_lowercase + string.ascii_uppercase + string.digits + string.punctuation)
 
 print(alphabets)
 
