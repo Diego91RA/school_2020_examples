@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Тестовый сайт</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/example.css') }}">
+    <meta charset="utf-8" />
+</head>
+<body>
+
+    <img id="head_img" src="{{url_for('static', filename='head.png')}}" />
+
+<div>
+    <h1>Датчик PIR-230-E, данные с 27.07 14:00 до 29.07 13:00. Лежит на подоконнике. Окно выходит на восточную сторону.</h1>
+    <img src="{{url_for('static', filename='Figure_1_cut.png')}}" />
+</div>
+
+<div>
+    <h1>Датчик DS18B20, данные с 27.07 16:20 до 29.07 13:00. Помещен в аквариум, проводилась замена воды.</h1>
+    <img src="{{url_for('static', filename='Figure_2_cut.png')}}" />
+</div>
+
+<div>
+    <h1>Датчик Xiaomi Bluetooth Temperature and Humidity, данные с 28.07 15:00 до 29.07 13:00. Лежит в дверце холодильника.</h1>
+    <img src="{{url_for('static', filename='Figure_3_cut.png')}}" />
+</div>
+
+</body>
+</html>
